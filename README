@@ -1,0 +1,24 @@
+
+total 32
+-rw-r--r--. 1 root root   0 Jul 29 16:19 README
+-rwxr-xr-x. 1 root root 410 Jul 29 14:44 emit_log.py
+-rwxr-xr-x. 1 root root 460 Jul 29 14:44 receive.py
+-rwxr-xr-x. 1 root root 632 Jul 29 14:52 receive_log.py
+-rwxr-xr-x. 1 root root 324 Jul 29 11:32 send.py
+drwxr-xr-x. 3 root root  43 Jul 29 11:39 src
+-rwxr-xr-x. 1 root root 102 Jul 29 14:44 while_emit_log.sh
+-rwxr-xr-x. 1 root root 101 Jul 29 14:45 while_receive.sh
+-rwxr-xr-x. 1 root root 105 Jul 29 14:45 while_receive_log.sh
+-rwxr-xr-x. 1 root root  86 Jul 29 14:45 while_send.sh
+
+./while_send.sh & -> messages in queue
+./while_recieve.sh & -> messages out queue
+./while_emit_log.sh & -> in exchange
+./while_receive_log.sh & -> out exchange
+
+
+
+jobs -> zeig alle prozess im hintergrund
+
+fg 1 -> foreground job 1
+fg 2 -> foreground job 2
